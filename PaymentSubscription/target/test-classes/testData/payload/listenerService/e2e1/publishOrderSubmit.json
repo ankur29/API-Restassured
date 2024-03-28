@@ -1,0 +1,57 @@
+{
+	"product": {
+		"id": "98606241-1edc-413a-9000-216a33720612",
+		"name": "Bango Music",
+		"sku": "BangoTest1",
+		"imageUrl": "https://de131df4f79c0693df09-a0a76e8e803ee3c08007f9aeb32ccdf3.ssl.cf3.rackcdn.com/graculus-T2MorMD8.jfif",
+		"desc": "Bango Music",
+		"partner": {
+			"id": "BANGO",
+			"name": "Bango Music",
+			"key": "BangoMusic"
+		}
+	},
+	"prices": [{
+		"retailCost": "1000",
+		"wholesaleCost": "500",
+		"currency": "GBP",
+		"start": "2022-07-19T06:21:17.974Z",
+		"end": "2022-07-19T06:21:17.974Z"
+	}],
+	"paymentCycle": {
+		"renewalCount": 1,
+		"renewalTerm": "WEEKLY",
+		"renewalRules": {
+			"id": "forwardToNextDay-revert",
+			"description": "Forward to next day - revert"
+		}
+	},
+	"paymentMethod": {
+		"pir": "152138191328",
+		"type": "CARD"
+	},
+	"orderInfo": {
+		"channel": "WEB",
+		"createdAt": "2022-07-19T06:21:17.974Z",
+		"orderNumber": "EE-41539070",
+		"status": "INITIAL"
+	},
+	"customer": {
+		"id": "8015:ankur.choudhary@bt.com"
+	},
+	"wholesale": {
+		"glCode": "61130068",
+		"taxCode": "AA"
+	},
+	"retail": {
+		"glCode": "50150269",
+		"taxCode": "AA"
+	},
+	"status": "INITIAL",
+	"channel": "WEB",
+	"customerInfoNeeded": false,
+	"salesType": "PRINCIPAL",
+	"paymentGracePeriod": 5,
+	"brandKey": "MP",
+	"preEnrollmentRequired": true
+}

@@ -1,0 +1,59 @@
+{
+    "product": {
+        "id": "1b17b661-1834-4855-aa0e-dc12852ae2e5",
+        "name": "Bango Music",
+        "sku": "BangoTest2",
+        "imageUrl": "https://b80e0249771b302fc2a0-7e445071374b1047cb89428e697720ca.ssl.cf3.rackcdn.com/Noggin%20the%20Nog-KamFgKxr.jfif",
+        "desc": "Bango Music",
+        "partner": {
+            "id": "BANGO",
+            "name": "Bango Music",
+            "key": "Product1"
+        }
+    },
+    "prices": [
+        {
+            "retailCost": "1500",
+            "wholesaleCost": "1000",
+            "currency": "GBP",
+            "start": "2022-07-19T06:21:17.974Z",
+            "end": "2022-07-19T06:21:17.974Z"
+        }
+    ],
+    "paymentCycle": {
+        "renewalCount": 1,
+        "renewalTerm": "MONTHLY",
+        "renewalRules": {
+            "id": "forwardToNextDay-revert",
+            "description": "Forward to next day - revert"
+        }
+    },
+    "paymentMethod": {
+        "pir": "152138191328",
+        "type": "CARD"
+    },
+    "orderInfo": {
+        "channel": "WEB",
+        "createdAt": "2022-07-19T06:21:17.974Z",
+        "orderNumber": "EE-41567838",
+        "status": "INITIAL"
+    },
+    "customer": {
+        "id": "56784032"
+    },
+    "wholesale": {
+        "glCode": "61130066",
+        "taxCode": "AA"
+    },
+    "retail": {
+        "glCode": "50150267",
+        "taxCode": "AA"
+    },
+    "status": "INITIAL",
+    "channel": "WEB",
+    "customerInfoNeeded": false,
+    "salesType": "PRINCIPAL",
+    "paymentGracePeriod": 5,
+    "brandKey": "MP",
+    "preEnrollmentRequired": true
+}

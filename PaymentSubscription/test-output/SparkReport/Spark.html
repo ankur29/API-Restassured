@@ -1,0 +1,978 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jun 20, 2023 01:03:21 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@activationTest</a><a class="dropdown-item" href="#">@ECOMP-12404</a><a class="dropdown-item" href="#">@Subscription</a><a class="dropdown-item" href="#">@positive</a><a class="dropdown-item" href="#">@Integration</a><a class="dropdown-item" href="#">@activation12</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Activation</p>
+            <p class="text-sm">
+              <span>13:03:23 PM</span> / <span>31:28:120</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Activation</h5>
+<span class='badge badge-success'>06.20.2023 13:03:23</span>
+<span class='badge badge-danger'>06.20.2023 13:04:51</span>
+<span class='badge badge-default'>31:28:120</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>user should be able to activate a subscription through the HTTP service.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.prepareRequestBodyWithObjects(java.lang.String,io.cucumber.datatable.DataTable)">
+                <span>Given I Prepare the request Body with "listenerService/publishOrderSubmit.json" with given values:</span>
+      <div><table class='markup-table table '><tr><td>channel</td><td>salesType</td><td>pir</td></tr><tr><td>WEB</td><td>PRINCIPAL</td><td>757081913820</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.prepareHeaders(io.cucumber.datatable.DataTable)">
+                <span>When I prepare the headers with given values:</span>
+      <div><table class='markup-table table '><tr><td>Content-Type</td></tr><tr><td>application/json</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.createPostRequest(java.lang.String,java.lang.String)">
+                <span>Then I execute the POST request service "listener_service" with endpoint "/sls/subscription-order-submit"</span>
+      <div>Request URL
+      </div>
+      <div><div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>https://dsl-marketplace-subscriptions-listener-service-e2e1.dsp-test.bt.com/sls/subscription-order-submit</textarea>
+ </div>
+</div>
+
+      </div>
+      <div>Request Header
+      </div>
+      <div> <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"Content-Type":"application/json"}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+      </div>
+      <div>Request Body
+      </div>
+      <div> <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({"product":{"id":"98606241-1edc-413a-9000-216a33720612","name":"Bango Music","sku":"BangoTest1","imageUrl":"https://de131df4f79c0693df09-a0a76e8e803ee3c08007f9aeb32ccdf3.ssl.cf3.rackcdn.com/graculus-T2MorMD8.jfif","desc":"Bango Music","partner":{"id":"BANGO","name":"Bango Music","key":"BangoMusic"}},"prices":[{"retailCost":"1000","wholesaleCost":"500","currency":"GBP","start":"2022-07-19T06:21:17.974Z","end":"2022-07-19T06:21:17.974Z"}],"paymentCycle":{"renewalCount":1,"renewalTerm":"WEEKLY","renewalRules":{"id":"forwardToNextDay-revert","description":"Forward to next day - revert"}},"paymentMethod":{"pir":"757081913820","type":"CARD"},"orderInfo":{"channel":"WEB","createdAt":"2022-07-19T06:21:17.974Z","orderNumber":"EE-71436261","status":"INITIAL"},"customer":{"id":"65347"},"wholesale":{"glCode":"61130068","taxCode":"AA"},"retail":{"glCode":"50150269","taxCode":"AA"},"status":"INITIAL","channel":"WEB","customerInfoNeeded":false,"salesType":"PRINCIPAL","paymentGracePeriod":5,"brandKey":"MP","preEnrollmentRequired":true}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+      </div>
+      <div>Response Body
+      </div>
+      <div> <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create(published subscription order submit); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyStatusCode(int)">
+                <span>And Verify Response code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyResponseNotEmpty()">
+                <span>And Verify that Response should not be empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.prepareHeaders(io.cucumber.datatable.DataTable)">
+                <span>When I prepare the headers with given values:</span>
+      <div><table class='markup-table table '><tr><td>Content-Type</td><td>x-api-key</td><td>Client-Id</td><td>Correlation-Id</td><td>Request-Id</td></tr><tr><td>application/json</td><td>nNoMWa1Tq885YXnAkXFEh2yPAFOv4cT62hVQRJOA</td><td>MARKETPLACE-E2E-01</td><td>e03bf914-3738-43b5-a7d2-152561e7cf0</td><td>e03bf914-3738-43b5-a7d2-152561e7cf0</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.createGetRequest(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Given I execute the GET request service "subscription_manager" with endpoint "/api/v1/subscriptions" and "customerId=customerId" as query parameter</span>
+      <div>Request URL
+      </div>
+      <div><div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>https://etcsub-test.bt.com/api/v1/subscriptions</textarea>
+ </div>
+</div>
+
+      </div>
+      <div>Request Header
+      </div>
+      <div> <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({"Content-Type":"application/json","x-api-key":"nNoMWa1Tq885YXnAkXFEh2yPAFOv4cT62hVQRJOA","Client-Id":"MARKETPLACE-E2E-01","Correlation-Id":"e03bf914-3738-43b5-a7d2-152561e7cf0","Request-Id":"e03bf914-3738-43b5-a7d2-152561e7cf0"}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+      </div>
+      <div>Response Body
+      </div>
+      <div> <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"data":[{"id":"6491564ad51ce161aed37ba9","status":"PENDING","customerId":"65347","prices":[{"amount":"1000","currency":"GBP","metadata":{"wholesaleCost":"500"},"startDate":1658211677974,"endDate":1658211677974}],"orderId":"EE-71436261","billingCycleAnchor":1687246409,"nextBillingCycleDate":1687246409,"paymentGracePeriod":{"initial":5,"subsequent":5},"trialEndDate":2551160009609,"paymentMethod":{"type":"CARD","paymentInstrument":{"reference":"757081913820","metadata":{"mprn":"5127769"}}},"paymentCycle":{"type":"weekly","duration":1,"rule":{"id":"forwardToNextDay-revert","description":"Forward to next day - revert"}},"item":{"id":"BangoTest1","description":"Bango Music","metadata":{"productId":"98606241-1edc-413a-9000-216a33720612","productName":"Bango Music"}},"pause":{"pausable":false,"minCyclesBeforePause":1,"pauseCycles":3},"skip":{"skipable":false,"maxCyclesToSkip":1,"minCyclesBeforeSkip":3,"skipCycles":3},"createdAt":1687246410023,"updatedAt":1687246410023,"history":[{"fromStatus":null,"toStatus":"PENDING","date":1687246409941,"reason":null}],"updateHistory":[],"metadata":{"channel":"WEB","orderStatus":"INITIAL","orderChannel":"WEB","orderCreatedAt":"2022-07-19T06:21:17.974Z"}}],"nextPage":"https://k8s-subscrip-subscrip-c8c9173600-768ec3e322415718.elb.eu-west-2.amazonaws.com:80/api/v1/subscriptions?customerId=65347&after=6491564ad51ce161aed37ba9"}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyStatusCode(int)">
+                <span>And Verify Response code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyResponseNotEmpty()">
+                <span>And Verify that Response should not be empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyAndGetValues(java.lang.String)">
+                <span>And Get the following values "data.id,data.orderId"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.createGetRequest(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Given I execute the GET request service "subscription_logging_service" with endpoint "/subscriptions-logging/v1/log" and "subscriptionId=id" as query parameter</span>
+      <div>Request URL
+      </div>
+      <div><div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>https://dsl-marketplace-subscriptions-logging-service-e2e1.dsp-test.bt.com/subscriptions-logging/v1/log</textarea>
+ </div>
+</div>
+
+      </div>
+      <div>Request Header
+      </div>
+      <div> <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({"Content-Type":"application/json","x-api-key":"nNoMWa1Tq885YXnAkXFEh2yPAFOv4cT62hVQRJOA","Client-Id":"MARKETPLACE-E2E-01","Correlation-Id":"e03bf914-3738-43b5-a7d2-152561e7cf0","Request-Id":"e03bf914-3738-43b5-a7d2-152561e7cf0"}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+      </div>
+      <div>Response Body
+      </div>
+      <div> <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"subscriptionStatuses":[{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"EE-71436261","status":"PENDING","reason":"KAFKA publish SUCCESS : com.bt.marketplace.confluentcloud-dev.private.app20718-sls-e2e1.subscription-created","metadata":null,"timestamp":"2023-06-20T07:33:30.75","loggerId":"listener-service(4ffdec2c-acbc-4f02-a4a1-b76cad80a1a3)"},{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"EE-71436261","status":"PENDING","reason":"Subscription Created Successfully","metadata":null,"timestamp":"2023-06-20T07:33:30.716","loggerId":"listener-service(4ffdec2c-acbc-4f02-a4a1-b76cad80a1a3)"}]}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyStatusCode(int)">
+                <span>And Verify Response code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyResponseNotEmpty()">
+                <span>And Verify that Response should not be empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyResponseData(io.cucumber.datatable.DataTable)">
+                <span>And Verify the response data with below expected result:</span>
+      <div><table class='markup-table table '><tr><td>Status</td><td>OrderNumber</td><td>SubscriptionId</td><td>Reason</td></tr><tr><td>PENDING</td><td>orderId</td><td>id</td><td>KAFKA publish SUCCESS,subscription-created</td></tr><tr><td>PENDING</td><td>orderId</td><td>id</td><td>Subscription Created Successfully</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.prepareHeaders(io.cucumber.datatable.DataTable)">
+                <span>When I prepare the headers with given values:</span>
+      <div><table class='markup-table table '><tr><td>Content-Type</td><td>apigw-tracking-header</td><td>channel</td></tr><tr><td>application/json</td><td>ada559fd-98ca-4e61-ad81-76a0bb433df2</td><td>web</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.createPostRequest(java.lang.String,java.lang.String)">
+                <span>Then I execute the POST request service "httpservice_activatesubscription" with endpoint "/marketplace/subscriptions/${id_global}/activate"</span>
+      <div>Request URL
+      </div>
+      <div><div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>https://dsl-marketplace-subscriptions-http-service-e2e1.dsp-test.bt.com/marketplace/subscriptions/6491564ad51ce161aed37ba9/activate</textarea>
+ </div>
+</div>
+
+      </div>
+      <div>Request Header
+      </div>
+      <div> <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({"Content-Type":"application/json","apigw-tracking-header":"ada559fd-98ca-4e61-ad81-76a0bb433df2","channel":"web"}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyStatusCode(int)">
+                <span>And Verify Response code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyResponseNotEmpty()">
+                <span>And Verify that Response should not be empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.prepareRequestBodyWithObjects(java.lang.String,io.cucumber.datatable.DataTable)">
+                <span>Given I Prepare the request Body with "listenerService/partnerSubscriptionCreated.json" with given values:</span>
+      <div><table class='markup-table table '><tr><td>id</td><td>marketplaceSubscriptionId</td></tr><tr><td>global</td><td>global</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.prepareHeaders(io.cucumber.datatable.DataTable)">
+                <span>When I prepare the headers with given values:</span>
+      <div><table class='markup-table table '><tr><td>Content-Type</td></tr><tr><td>application/json</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.createPostRequest(java.lang.String,java.lang.String)">
+                <span>Then I execute the POST request service "listener_service" with endpoint "/sls/partner-subscription-created"</span>
+      <div>Request URL
+      </div>
+      <div><div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>https://dsl-marketplace-subscriptions-listener-service-e2e1.dsp-test.bt.com/sls/partner-subscription-created</textarea>
+ </div>
+</div>
+
+      </div>
+      <div>Request Header
+      </div>
+      <div> <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({"Content-Type":"application/json"}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+      </div>
+      <div>Request Body
+      </div>
+      <div> <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({"id":"98606241-1edc-413a-9000-216a33720612","status":"PENDING","activationUrl":"https://xbox.com/activate","externalCustomerId":"externalCustomerId from PIMS","partnerCustomerId":"","createdDate":"2022-07-19T06:21:17.974Z","marketplaceSubscriptionId":"6491564ad51ce161aed37ba9"}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+      </div>
+      <div>Response Body
+      </div>
+      <div> <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create(published partner subscription created event); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyStatusCode(int)">
+                <span>And Verify Response code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyResponseNotEmpty()">
+                <span>And Verify that Response should not be empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.prepareRequestBodyWithObjects(java.lang.String,io.cucumber.datatable.DataTable)">
+                <span>Given I Prepare the request Body with "listenerService/partnerSubscriptionActivated.json" with given values:</span>
+      <div><table class='markup-table table '><tr><td>id</td><td>marketplaceSubscriptionId</td></tr><tr><td>global</td><td>global</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.prepareHeaders(io.cucumber.datatable.DataTable)">
+                <span>When I prepare the headers with given values:</span>
+      <div><table class='markup-table table '><tr><td>Content-Type</td></tr><tr><td>application/json</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.createPostRequest(java.lang.String,java.lang.String)">
+                <span>Then I execute the POST request service "listener_service" with endpoint "/sls/partner-subscription-activated"</span>
+      <div>Request URL
+      </div>
+      <div><div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>https://dsl-marketplace-subscriptions-listener-service-e2e1.dsp-test.bt.com/sls/partner-subscription-activated</textarea>
+ </div>
+</div>
+
+      </div>
+      <div>Request Header
+      </div>
+      <div> <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create({"Content-Type":"application/json"}); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+      </div>
+      <div>Request Body
+      </div>
+      <div> <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({"id":"98606241-1edc-413a-9000-216a33720612","status":"ACTIVE","externalCustomerId":"externalCustomerId from PIMS","partnerCustomerId":"","activatedDate":"2022-07-19T06:21:17.974Z","marketplaceSubscriptionId":"6491564ad51ce161aed37ba9"}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+      </div>
+      <div>Response Body
+      </div>
+      <div> <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create(published partner subscription activated event); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyStatusCode(int)">
+                <span>And Verify Response code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyResponseNotEmpty()">
+                <span>And Verify that Response should not be empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.createGetRequest(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Given I execute the GET request service "subscription_logging_service" with endpoint "/subscriptions-logging/v1/log" and "subscriptionId=id" as query parameter</span>
+      <div>Request URL
+      </div>
+      <div><div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>https://dsl-marketplace-subscriptions-logging-service-e2e1.dsp-test.bt.com/subscriptions-logging/v1/log</textarea>
+ </div>
+</div>
+
+      </div>
+      <div>Request Header
+      </div>
+      <div> <div class='json-tree' id='code-block-json-14'></div>
+ <script>
+  function jsonTreeCreate14() { 
+   document.getElementById('code-block-json-14').innerHTML = JSONTree.create({"Content-Type":"application/json"}); 
+  }
+  jsonTreeCreate14();
+ </script>
+
+      </div>
+      <div>Response Body
+      </div>
+      <div> <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create({"subscriptionStatuses":[{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"6491564ad51ce161aed37ba9","status":"ACTIVE_UNPAID","reason":"Subscription updated with activated partner subscription data","metadata":null,"timestamp":"2023-06-20T07:34:11.635","loggerId":"listener-service(2cc826c0-81da-426f-a7a6-34f559206e82)"},{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"6491564ad51ce161aed37ba9","status":"ACTIVE_UNPAID","reason":"Subscription Activated, payment pending","metadata":null,"timestamp":"2023-06-20T07:34:10.094","loggerId":"listener-service(2cc826c0-81da-426f-a7a6-34f559206e82)"},{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"6491564ad51ce161aed37ba9","status":"PENDING_CLIENT_ACTIVATION","reason":"Partner Subscription Activated Successfully","metadata":null,"timestamp":"2023-06-20T07:34:08.656","loggerId":"listener-service(2cc826c0-81da-426f-a7a6-34f559206e82)"},{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"6491564ad51ce161aed37ba9","status":"PENDING_CLIENT_ACTIVATION","reason":"Subscription updated with new partner subscription data","metadata":null,"timestamp":"2023-06-20T07:34:03.617","loggerId":"listener-service(aed3af26-a72c-4ddd-bbbe-bab1b2f46460)"},{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"6491564ad51ce161aed37ba9","status":"PENDING","reason":"Partner Subscription Created Successfully","metadata":null,"timestamp":"2023-06-20T07:34:01","loggerId":"listener-service(aed3af26-a72c-4ddd-bbbe-bab1b2f46460)"},{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"EE-71436261","status":"PENDING","reason":"Topic com.bt.marketplace.confluentcloud-dev.private.app20718-shs-e2e1.create-partner-subscription published","metadata":null,"timestamp":"2023-06-20T07:33:52.728","loggerId":"http-service(ada559fd-98ca-4e61-ad81-76a0bb433df2)"},{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"EE-71436261","status":"PENDING","reason":"Subscription Activation Initated By Customer","metadata":null,"timestamp":"2023-06-20T07:33:52.596","loggerId":"http-service(ada559fd-98ca-4e61-ad81-76a0bb433df2)"},{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"EE-71436261","status":"PENDING","reason":"KAFKA publish SUCCESS : com.bt.marketplace.confluentcloud-dev.private.app20718-sls-e2e1.subscription-created","metadata":null,"timestamp":"2023-06-20T07:33:30.75","loggerId":"listener-service(4ffdec2c-acbc-4f02-a4a1-b76cad80a1a3)"},{"subscriptionId":"6491564ad51ce161aed37ba9","orderNumber":"EE-71436261","status":"PENDING","reason":"Subscription Created Successfully","metadata":null,"timestamp":"2023-06-20T07:33:30.716","loggerId":"listener-service(4ffdec2c-acbc-4f02-a4a1-b76cad80a1a3)"}]}); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyStatusCode(int)">
+                <span>And Verify Response code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyResponseNotEmpty()">
+                <span>And Verify that Response should not be empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.api.stepdefinition.PublishOrderSubmitStepDefination.verifyResponseData(io.cucumber.datatable.DataTable)">
+                <span>And Verify the response data with below expected result:</span>
+      <div><table class='markup-table table '><tr><td>Status</td><td>OrderNumber</td><td>SubscriptionId</td><td>Reason</td></tr><tr><td>ACTIVE_UNPAID</td><td>id</td><td>id</td><td>Subscription updated with activated partner subscription data</td></tr><tr><td>ACTIVE_UNPAID</td><td>id</td><td>id</td><td>Subscription Activated, payment pending</td></tr><tr><td>PENDING_CLIENT_ACTIVATION</td><td>id</td><td>id</td><td>Partner Subscription Activated Successfully</td></tr><tr><td>PENDING_CLIENT_ACTIVATION</td><td>id</td><td>id</td><td>Subscription updated with new partner subscription data</td></tr><tr><td>PENDING</td><td>id</td><td>id</td><td>Partner Subscription Created Successfully</td></tr><tr><td>PENDING</td><td>orderId</td><td>id</td><td>create-partner-subscription published</td></tr><tr><td>PENDING</td><td>orderId</td><td>id</td><td>Subscription Activation Initated By Customer</td></tr><tr><td>PENDING</td><td>orderId</td><td>id</td><td>KAFKA publish SUCCESS,subscription-created</td></tr><tr><td>PENDING</td><td>orderId</td><td>id</td><td>Subscription Created Successfully</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@activationTest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@activationTest</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:03:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>user should be able to activate a subscription through the HTTP service.</a>
+<div class="">
+<span class="badge badge-default">Activation.user should be able to activate a subscription through the HTTP service.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@ECOMP-12404</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ECOMP-12404</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:03:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>user should be able to activate a subscription through the HTTP service.</a>
+<div class="">
+<span class="badge badge-default">Activation.user should be able to activate a subscription through the HTTP service.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Subscription</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Subscription</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:03:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>user should be able to activate a subscription through the HTTP service.</a>
+<div class="">
+<span class="badge badge-default">Activation.user should be able to activate a subscription through the HTTP service.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@positive</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@positive</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:03:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>user should be able to activate a subscription through the HTTP service.</a>
+<div class="">
+<span class="badge badge-default">Activation.user should be able to activate a subscription through the HTTP service.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Integration</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Integration</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:03:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>user should be able to activate a subscription through the HTTP service.</a>
+<div class="">
+<span class="badge badge-default">Activation.user should be able to activate a subscription through the HTTP service.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@activation12</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@activation12</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:03:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>user should be able to activate a subscription through the HTTP service.</a>
+<div class="">
+<span class="badge badge-default">Activation.user should be able to activate a subscription through the HTTP service.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jun 20, 2023 01:03:21 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jun 20, 2023 01:04:51 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>32</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Activation":88.12
+};
+</script>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@activationTest</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ECOMP-12404</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Subscription</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@positive</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Integration</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@activation12</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 1,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 32,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
